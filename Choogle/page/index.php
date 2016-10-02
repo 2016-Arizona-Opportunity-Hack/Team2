@@ -11,7 +11,31 @@
 				for (var i = 0; i < specificLists.length; ++i)
 					specificLists[i].style.display = "none";
 			}
+			function showSpecificList()	{
+				hideSpecificLists();
 				
+				var toShow = document.getElementById("general_cat");
+				
+				switch (toShow.value){
+					case 1:
+						specific_l&t.style.display = "inline";
+						break;
+					case 2: 
+						specific_r&c.style.display = "inline";
+						break;
+					case 3: 
+						specific_b&o.style.display = "inline";
+						break;
+					case 4: 
+						specific_g.style.display = "inline";
+						break;
+					case 5: 
+						specific_c&s.style.display = "inline";
+						break;
+				}
+				
+				
+			}
 			window.onload = function() {
 				//hideSpecificLists();
 			};
