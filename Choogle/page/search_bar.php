@@ -1,14 +1,16 @@
 <form action="search_results.php" method="get" id="body">
 	<nav>
 		<h3>Chandler Chamber of Commerce</h3>
-		<a href = "https://www.facebook.com/ChandlerChamber">Facebook</a>
-		<a href = "https://twitter.com/chandlerchamber">Twitter</a>
-		<a href = "https://plus.google.com/+Chandlerchamber">Google+</a>
-		<a href = "https://www.youtube.com/user/ChandlerChamber1">YouTube</a>
-		<a href = "https://www.linkedin.com/company/chandler-chamber-of-commerce">Linked in</a>
-		<a href = "https://www.yelp.com/biz/chandler-chamber-of-commerce-chandler-2">Yelp</a>
-		<a href = "https://www.instagram.com/chandlerchamber/">Instagram</a>
-		<a href = "calendar.php">Calendar of Events</a>
+		<ul>
+			<li><a href = "https://www.facebook.com/ChandlerChamber">Facebook</a></li>
+			<li><a href = "https://twitter.com/chandlerchamber">Twitter</a></li>
+			<li><a href = "https://plus.google.com/+Chandlerchamber">Google+</a></li>
+			<li><a href = "https://www.youtube.com/user/ChandlerChamber1">YouTube</a></li>
+			<li><a href = "https://www.linkedin.com/company/chandler-chamber-of-commerce">Linked in</a></li>
+			<li><a href = "https://www.yelp.com/biz/chandler-chamber-of-commerce-chandler-2">Yelp</a></li>
+			<li><a href = "https://www.instagram.com/chandlerchamber/">Instagram</a></li>
+			<li><a href = "calendar.php">Calendar of Events</a></li>
+		</ul>
 	</nav>
 	<div>
 		<input type="text" name="search_in">
