@@ -10,6 +10,7 @@
 				var x = document.getElementById('general_cat');
 				while(x.value == 0){
 					
+					
 				document.getElementById(specific_cat).style.visibility = 'block';
 				}
 			};
