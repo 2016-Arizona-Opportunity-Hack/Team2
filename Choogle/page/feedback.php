@@ -11,5 +11,9 @@
 			require_once("menu.php");
 			require_once("nav.php");
 		?>
+		
+		<h3>Questions and Answers from the Community</h3>
+		<br>
+		
 	</body>
 </html>
