@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="../style/style.css">
 		<script>
 			window.onload = function() {
-				var x = value;
+				var x = document.getElementById(value);
 				while(x == 0){
 					
 				document.getElementById(specific_cat).style.visibility = 'block';
