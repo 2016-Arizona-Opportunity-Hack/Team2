@@ -11,7 +11,7 @@
 				for (var i = 0; i < specificLists.length; ++i)
 					specificLists[i].style.display = "none";
 			}
-			function showSpecificList()	{
+			function showSpecificList()	 {
 				hideSpecificLists();
 				
 				var toShow = document.getElementById("general_cat");
