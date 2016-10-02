@@ -6,13 +6,26 @@
 		<link rel="stylesheet" href="../style/style.css">
 	</head>
 	<body>
-		<h1>Connect Chandler</h1>
-		<br>
-		<h2>"Make Chandler, Arizona the most connected city in the world."</h2>
-		<p>Enter keywords such as "food" or "parks" to find resources in Chandler</p>
-		
-		<form action = "search.php"  method = "post">
-		<input type = "text" name = "keywords"><br>
+		<div id="head">
+			<h1>Connect Chandler</h1>
+			<h2><q>Make Chandler, Arizona the most connected city in the world.</q></h2>
+		</div>
+		<div id="nav">
+			
+		</div>
+		<form action="search.php" method="get" id="body">
+			<div>
+				<input type="text" name="search_in">
+				<input type="submit" value="Search">
+				
+				<select name="general_cat">
+					
+				</select>
+				
+				<select name="specific_cat">
+					
+				</select>
+			</div>
 		</form>
 	</body>
 </html>
