@@ -63,5 +63,6 @@
 				<option value="Repair">Repair</option>
 			</select>
 		</span>
+		<input type="hidden" value="0" name="preference">
 	</div>
 </form>
