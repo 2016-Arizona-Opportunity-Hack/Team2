@@ -4,9 +4,21 @@
 }
 
 body {
-	background-image: ../image/site_designs/Chandler AZ.jpg;
+	background-image: url("../image/site_designs/Chandler AZ.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: large;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: 	#c91dc9;
+}
+
+#nav {
+	width: 10%;
+	float: left;
+	background-color: #d9d9d9;
+}
+
+#input {
+	float: center;
 }
