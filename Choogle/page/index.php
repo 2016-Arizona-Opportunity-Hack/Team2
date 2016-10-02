@@ -9,6 +9,7 @@
 	<body>
 		<?php
 			require_once('menu.php');
+			require_once("nav.php");
 			require_once('search_bar.php');
 		?>
 	</body>

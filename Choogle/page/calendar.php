@@ -8,6 +8,7 @@
 	<body>
 		<?php
 			require_once("menu.php");
+			require_once("nav.php");
 		?>
 	</body>
 </html>
