@@ -6,8 +6,9 @@
 		<link rel="stylesheet" href="../style/style.css">
 		<script>
 			window.onload = function() {
-				var x = document.getElementById(value);
-				while(x == 0){
+				
+				var x = document.getElementById('general_cat');
+				while(x.value == 0){
 					
 				document.getElementById(specific_cat).style.visibility = 'block';
 				}
@@ -23,16 +24,16 @@
 				<input type="text" name="search_in">
 				<input type="submit" value="Search">
 					
-				<select name="general_cat">
-					<option value="1">General</option>
-					<option value="2">Living & Transportation</option>
-					<option value="3">Recreation & Culture</option>
-					<option value="4">Businesses & Organizations</option>
-					<option value="5">Government</option>
-					<option value="6">Care & Services</option>
+				<select name="general_cat" id = "general_cat">
+					<option value="0">General</option>
+					<option value="1">Living & Transportation</option>
+					<option value="2">Recreation & Culture</option>
+					<option value="3">Businesses & Organizations</option>
+					<option value="4">Government</option>
+					<option value="5">Care & Services</option>
 				</select>
 				
-				<select name="specific_cat" id "specific_cat" = 0>
+				<select name="specific_cat">
 					<option value="Advertising & Media">Advertising & Media</option>
 					<option value="Arts, Culture & Entertainment">Arts, Culture & Entertainment</option>
 					<option value="Automotive & Marine">Automotive & Marine</option>
