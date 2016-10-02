@@ -40,10 +40,10 @@ function resizeIframe() {
 	iframe.height = height * 0.80;
 }
 
-window.onload = resizeIframe;
-
 window.onload = function() {
 	hideSpecificLists();
-	document.getElementById("general_cat").onchange = showSpecificList;
-	resizeIframe();
+	if (document.getElementById("general_cat") != null)
+		document.getElementById("general_cat").onchange = showSpecificList;
+	if (document.getElementById("iframe") != null)
+		resizeIframe();
 };
