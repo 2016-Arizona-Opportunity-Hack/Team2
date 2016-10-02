@@ -57,6 +57,11 @@ nav h3 {
 nav ul {
 	list-style-type: none;
 }
+
+img {
+	width: 10%;
+	height: 10%;
+}
 /*NAVIGATION CSS*/
 
 /*INPUT FIELD CSS*/

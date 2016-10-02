@@ -2,14 +2,14 @@
 	<nav>
 		<h3>Chandler Chamber of Commerce</h3>
 		<ul>
-			<li><a href = "https://www.facebook.com/ChandlerChamber">Facebook</a></li>
-			<li><a href = "https://twitter.com/chandlerchamber">Twitter</a></li>
-			<li><a href = "https://plus.google.com/+Chandlerchamber">Google+</a></li>
-			<li><a href = "https://www.youtube.com/user/ChandlerChamber1">YouTube</a></li>
-			<li><a href = "https://www.linkedin.com/company/chandler-chamber-of-commerce">Linked in</a></li>
-			<li><a href = "https://www.yelp.com/biz/chandler-chamber-of-commerce-chandler-2">Yelp</a></li>
-			<li><a href = "https://www.instagram.com/chandlerchamber/">Instagram</a></li>
-			<li><a href = "calendar.php">Calendar of Events</a></li>
+			<li><img src = "../site_designs/facebook_icon.png"><a href = "https://www.facebook.com/ChandlerChamber">Facebook</a></li>
+			<li><img src = "../site_designs/twitter_icon.png"><a href = "https://twitter.com/chandlerchamber">Twitter</a></li>
+			<li><img src = "../site_designs/google+_icon.png"><a href = "https://plus.google.com/+Chandlerchamber">Google+</a></li>
+			<li><img src = "../site_designs/youtube_icon.png"><a href = "https://www.youtube.com/user/ChandlerChamber1">YouTube</a></li>
+			<li><img src = "../site_designs/linkedin_icon.png"><a href = "https://www.linkedin.com/company/chandler-chamber-of-commerce">Linked in</a></li>
+			<li><img src = "../site_designs/yelp_icon.png"><a href = "https://www.yelp.com/biz/chandler-chamber-of-commerce-chandler-2">Yelp</a></li>
+			<li><img src = "../site_designs/instagram_icon.png"><a href = "https://www.instagram.com/chandlerchamber/">Instagram</a></li>
+			<li><img src = "../site_designs/"><a href = "calendar.php">Calendar of Events</a></li>
 		</ul>
 	</nav>
 	<div>
