@@ -17,9 +17,18 @@
 			$feedback = $_POST['feedback'];
 			
 			$dbc = mysqli_connect("localhost", "root", "", "user_feedback") or die("could not load database");
-			$query = "INSERT INTO user_feedback (name, feedback) VALUES ('$name', '$feedback');";
+			$query = "INSERT INTO user_feedback (name, feedback) VALUES (?, ?);";
 			
-			$result = mysqli_query($dbc, $query) or die('Error submitting query');
+			if($stmt = $mysqli->prepare($query)){
+				$stmt->bind_param("sss", $name, $feedback)
+				
+				$name = $_POST["name"];
+				$feedback = $_POST["feedback"];
+				
+				$stmt->execute();
+				$result = mysqli_query($dbc, $query) or die('Error submitting query');
+			}
+			
 			mysqli_close($dbc);
 		?>
 		
