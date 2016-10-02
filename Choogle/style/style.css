@@ -31,6 +31,14 @@ form div span {
 	display: block;
 	margin: 15px;
 }
+/*SPECIFIC LIST STYLE*/
+
+form div select {
+	float: right;
+	display: none;
+}
+
+/*SPECIFIC LIST STYLE*/
 /*INPUT FIELD CSS*/
 
 /*NAVIGATION CSS*/

@@ -5,6 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		<link rel="stylesheet" href="../style/style.css">
 		<script>
+			//hide the specific lists
 			function hideSpecificLists() {
 				var specificLists = document.getElementsByClassName("specific_cat");
 				for (var i = 0; i < specificLists.length; ++i)
@@ -23,8 +24,7 @@
 		<form action="search.php" method="get" id="body">
 			<div>
 				<input type="text" name="search_in">
-				<input type="submit" value="Search">
-				
+				<input type="submit" value="Search">		
 				<span>	
 					<select name="general_cat" id = "general_cat">
 						<option value="0">General</option>
