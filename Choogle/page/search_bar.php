@@ -2,21 +2,7 @@
 	<div>
 		<input type="text" name="search_in">
 		<input type="submit" value="Search">		
-		<span>	
-		<?
-		$mysqli = new mysqli("localhost","root","siteList");
-		$query = "SELECT Name, url";
-		if($stmt = $mysqli->prepare($query)){
-			stmt-> execute();
-			stmt->bind_result($name);
-			while($stmt->fetch()){
-				printf($name);
-				
-			}
-			stmt->close();
-			}
-		mysqli->close();
-		?>
+		<span>
 			<select name="general_cat" id = "general_cat">
 				<option value="0">General</option>
 				<option value="1">Living & Transportation</option>

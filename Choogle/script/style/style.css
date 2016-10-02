@@ -118,5 +118,7 @@ form div span {
 /*IFRAME*/
 div.frame {
 	text-align: right;
+	clear: left;
 }
+
 /*IFRAME*/

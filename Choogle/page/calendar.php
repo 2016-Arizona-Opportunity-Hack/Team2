@@ -4,7 +4,7 @@
 		<title>Connect to Chandler - Results</title>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
-		<script src="../script/dropdown.js"></script>
+		<script src="../script.js"></script>
 		<style>
 			div#frame {
 				text-align: right;

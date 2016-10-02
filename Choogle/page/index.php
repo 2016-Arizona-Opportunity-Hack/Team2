@@ -4,7 +4,7 @@
 		<title>Connect to Chandler - Home</title>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
-		<script src="../script/dropdown.js"></script>
+		<script src="../script/script.js"></script>
 	</head>
 	<body>
 		<?php
