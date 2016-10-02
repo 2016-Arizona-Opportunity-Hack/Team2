@@ -17,6 +17,7 @@
 	</head>
 	<body>
 		<?php
+			//use of prepared statement and htmlentities to protect agains XSS and SQL Injection
 			$mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
 			$query = "SELECT * FROM site WHERE Name = '$[keywords]'";
 			if($stmt = $mysqli->prepare($query)){
@@ -29,10 +30,28 @@
 				}
 			}
 			$mysqli->close();
+<<<<<<< HEAD
 
+=======
+			
+			//Calling reusable code
+>>>>>>> branch 'master' of https://github.com/Opportunity-Hack-2016-AZ/Team2.git
 			require_once("menu.php");
 			require_once("search_bar.php");	
 			require_once("nav.php");
 		?>
+<<<<<<< HEAD
+=======
+		
+		<!--iframe to embed other websites-->
+		<div id="frame">
+			<?php
+				$input = $_GET['search_in'];
+				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
+			?>
+				<p>Sorry! Your browser does not support iframes!</p>
+			</iframe>
+		</div>
+>>>>>>> branch 'master' of https://github.com/Opportunity-Hack-2016-AZ/Team2.git
 	</body>
 </html>
