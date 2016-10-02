@@ -8,6 +8,6 @@
 		<li><img src = "../image/linkedin_icon.png"><a href = "https://www.linkedin.com/company/chandler-chamber-of-commerce" alt="(LI)">Linked in</a></li>
 		<li><img src = "../image/yelp_icon.png"><a href = "https://www.yelp.com/biz/chandler-chamber-of-commerce-chandler-2" alt="(yelp)">Yelp</a></li>
 		<li><img src = "../image/instagram_icon.png"><a href = "https://www.instagram.com/chandlerchamber/" alt="(instagram)">Instagram</a></li>
-		<li><img src = "../image/"><a href = "calendar.php">Event Calendar</a></li>
+		<li><img src = "../image/calendar_icon.png"><a href = "calendar.php">Event Calendar</a></li>
 	</ul>
 </nav>
