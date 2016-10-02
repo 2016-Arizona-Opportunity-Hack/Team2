@@ -18,10 +18,12 @@
 	<body>
 		<?php
 			$mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
-			$query = "SELECT Name FROM site";
+			$query = "SELECT * FROM site WHERE Name = '$[keywords]'";
 			if($stmt = $mysqli->prepare($query)){
+				$keywords = $_GET["search_in"];
+				$stmt->bind_param(s, %keywords)
 				$stmt-> execute();
-				$stmt->bind_result($name);
+				$stmt->bind_result(htmlentities($name));
 				while($stmt->fetch()){
 					printf("%s", $name);
 				}
