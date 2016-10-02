@@ -45,6 +45,7 @@ function resizeIframe() {
 	iframe.height = height * 0.80;
 }
 
+/* Fills webpage with 20 links at a time of the results from the search */
 function populateSearch() {
 	const linksPerPage = 20;
 	var page = 0, numPages = 0;//Search results / linksPerPage
