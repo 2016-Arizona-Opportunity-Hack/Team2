@@ -27,9 +27,18 @@
 				while($stmt->fetch()){
 					printf("%s", $name);
 				}
+ $cipher = AES; 
+ $key = 128;
+ $data = $name;
+ $mode =  "ecb";
+ $iv = 128;
+ 
+ string mcrypt_encrypt ( string $cipher , string $key , string $data , string $mode [, string $iv ] )
+ ?>
 			}
 			$mysqli->close();
 
+			
 			//Calling reusable code
 			require_once("menu.php");
 			require_once("search_bar.php");
