@@ -18,8 +18,8 @@
 		<?php
 			require_once('menu.php');
 		?>
-		<form action="search.php" method="get" id="body">
-			<div>
+		<form action="search.php" method="get" id="body" margin="auto>
+			<div id = "input">
 				<input type="text" name="search_in">
 				<input type="submit" value="Search">
 					
