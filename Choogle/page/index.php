@@ -24,10 +24,12 @@
 				<input type="submit" value="Search">
 					
 				<select name="general_cat">
-					<option value=''></option>
-					<option value=''></option>
-					<option value=''></option>
-					<option value=''></option>
+					<option value=''>General</option>
+					<option value=''>Living & Transportation</option>
+					<option value=''>Recreation & Culture</option>
+					<option value=''>Businesses & Organizations</option>
+					<option value=''>Government</option>
+					<option value=''>Care & Services</option>
 				</select>
 				
 				<select name="specific_cat" id "specific_cat" = 0>

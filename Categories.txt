@@ -1,0 +1,35 @@
+Advertising & Media: B&O
+Arts and Culture & Entertainment: R&C
+Automotive & Marine: L&T
+Business & Professional Services: B&O
+Chairman's Circle: G
+Child Care: C&S
+Computers & Telecommunications: *
+Construction Equipment & Contractors: L&T
+Finance & Insurance: B&O
+Government, Education & Individuals: G
+Health Care: C&S
+Home & Garden: L&T
+Industrial Supplies & Services: B&O
+Legal: G
+Living: L&T
+Lodging & Travel: L&T
+Manufacturing, Production & Wholesale: B&O
+Non-profits, Community & Civic Organizations: B&O
+Personal Services & Care: C&S
+Pets and Veterinary: C&S
+Printing Services: C&S
+Public Utilities & Environment: L&T
+Real Estate, Moving & Storage: L&T
+Religious Organizations: B&O
+Repair: C&S
+Restaurants, Food & Beverages: R&C
+Shopping & Specialty Retail: R&C
+Sports & Recreation: R&C
+Transportation: L&T
+
+Living & Transportation: 8
+Recreation & Culture: 4
+Businesses & Organizations: 7
+Government: 3
+Care & Services: 6
