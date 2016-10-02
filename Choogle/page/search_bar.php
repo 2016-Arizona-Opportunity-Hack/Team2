@@ -6,45 +6,45 @@
 		<span>
 			<!-- The list of general categories to choose -->
 			<select name="general_cat" id = "general_cat">
-				<option value="0">General</option>
-				<option value="1">Living & Transportation</option>
-				<option value="2">Recreation & Culture</option>
-				<option value="3">Businesses & Organizations</option>
-				<option value="4">Government</option>
-				<option value="5">Care & Services</option>
+				<option value="General">General</option>
+				<option value="Living and Transportation">Living &amp; Transportation</option>
+				<option value="Recreation & Culture">Recreation &amp; Culture</option>
+				<option value="Businesses & Organizations">Businesses &amp; Organizations</option>
+				<option value="Government">Government</option>
+				<option value="Care & Services">Care &amp; Services</option>
 			</select>
 			
 			<!-- List 1 of specific categories to choose -->
-			<select name='specific_l&t' class = "specific_cat">
+			<select name='specific_l&amp;t' class = "specific_cat">
 				<option value="Specific">Specific</option>
-				<option value="Automotive & Marine">Automotive & Marine</option>
-				<option value="Construction Equipment & Contractors">Construction Equipment & Contractors</option>
-				<option value="Home & Garden">Home & Garden</option>
+				<option value="Automotive &amp; Marine">Automotive &amp; Marine</option>
+				<option value="Construction Equipment &amp; Contractors">Construction Equipment &amp; Contractors</option>
+				<option value="Home &amp; Garden">Home &amp; Garden</option>
 				<option value="Living">Living</option>
-				<option value="Lodging & Travel">Lodging & Travel</option>
-				<option value="Public Utilities & Environment">Public Utilities & Environment</option>
-				<option value="Real Estate, Moving & Storage">Real Estate, Moving & Storage</option>
+				<option value="Lodging &amp; Travel">Lodging &amp; Travel</option>
+				<option value="Public Utilities &amp; Environment">Public Utilities &amp; Environment</option>
+				<option value="Real Estate, Moving &amp; Storage">Real Estate, Moving &amp; Storage</option>
 				<option value="Transportation">Transportation</option>
 			</select>
 			
 			<!-- List 2 of specific categories to choose -->
-			<select name='specific_r&c' class = "specific_cat">
+			<select name='specific_r&amp;c' class = "specific_cat">
 				<option value="Specific">Specific</option>
-				<option value="Arts, Culture & Entertainment">Arts, Culture & Entertainment</option>
-				<option value="Restaurants, Food & Beverages">Restaurants, Food & Beverages</option>
-				<option value="Shopping & Specialty Retail">Shopping & Specialty Retail</option>
-				<option value="Sports & Recreation">Sports & Recreation</option>
+				<option value="Arts, Culture &amp; Entertainment">Arts, Culture &amp; Entertainment</option>
+				<option value="Restaurants, Food &amp; Beverages">Restaurants, Food &amp; Beverages</option>
+				<option value="Shopping &amp; Specialty Retail">Shopping &amp; Specialty Retail</option>
+				<option value="Sports &amp; Recreation">Sports &amp; Recreation</option>
 			</select>
 			
 			<!-- List 3 of specific categories to choose -->
-			<select name='specific_b&o' class = "specific_cat">
+			<select name='specific_b&amp;o' class = "specific_cat">
 				<option value="Specific">Specific</option>
-				<option value="Advertising & Media">Advertising & Media</option>
-				<option value="Business & Professional Services">Business & Professional Services</option>
-				<option value="Finance & Insurance">Finance & Insurance</option>
-				<option value="Industrial Supplies & Services">Industrial Supplies & Services</option>
-				<option value="Manufacturing, Production & Wholesale">Manufacturing, Production & Wholesale</option>
-				<option value="Non-Profits, Community & Civic Organizations">Non-Profits, Community & Civic Organizations</option>
+				<option value="Advertising &amp; Media">Advertising &amp; Media</option>
+				<option value="Business &amp; Professional Services">Business &amp; Professional Services</option>
+				<option value="Finance &amp; Insurance">Finance &amp; Insurance</option>
+				<option value="Industrial Supplies &amp; Services">Industrial Supplies &amp; Services</option>
+				<option value="Manufacturing, Production &amp; Wholesale">Manufacturing, Production &amp; Wholesale</option>
+				<option value="Non-Profits, Community &amp; Civic Organizations">Non-Profits, Community &amp; Civic Organizations</option>
 				<option value="Religious Organizations">Religious Organizations</option>
 			</select>
 			
@@ -52,18 +52,18 @@
 			<select name='specific_g' class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Chairman's Circle'">Chairman's Circle</option>
-				<option value="Government, Education & Individuals">Government, Education & Individuals</option>
+				<option value="Government, Education &amp; Individuals">Government, Education &amp; Individuals</option>
 				<option value="Legal">Legal</option>
 			</select>
 			
 			<!-- List 5 of specific categories to choose -->
-			<select name="specific_c&s" class = "specific_cat">
+			<select name="specific_c&amp;s" class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Child Care">Child Care</option>
-				<option value="Computers & Telecommunications">Computers & Telecommunications</option>
+				<option value="Computers &amp; Telecommunications">Computers &amp; Telecommunications</option>
 				<option value="Health Care">Health Care</option>
-				<option value="Personal Services & Care">Personal Services & Care</option>
-				<option value="Pets & Veterinary">Pets & Veterinary</option>
+				<option value="Personal Services &amp; Care">Personal Services &amp; Care</option>
+				<option value="Pets &amp; Veterinary">Pets &amp; Veterinary</option>
 				<option value="Printing Services">Printing Services</option>
 				<option value="Repair">Repair</option>
 			</select>
