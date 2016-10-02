@@ -14,10 +14,10 @@
 			$name = $_POST['username'];
 			$feedback = $_POST['feedback'];
 			
-			$dbc = mysqli_connect("localhost", "root", "", "site_list") or die("could not load database");
-			$query = "INSERT INTO (name, url) VALUES ($name, $feedback);";
+			$dbc = mysqli_connect("localhost", "root", "", "user_feedback") or die("could not load database");
+			$query = "INSERT INTO user_feedback (name, feedback) VALUES ('$name', '$feedback');";
 			
-			$result = mysqli_query($query, $dbc) or die('Error submitting query');
+			$result = mysqli_query($dbc, $query) or die('Error submitting query');
 			mysqli_close($dbc);
 		?>
 		
