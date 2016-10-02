@@ -14,6 +14,7 @@
 				color: blue;
 				margin-left: 200px;
 				border: 1px groove black;
+				padding: 25px;
 			}
 			
 			div#result_page ul {
@@ -46,6 +47,7 @@
 				<?php
 					//use of prepared statement and htmlentities to protect against XSS and SQL Injection
 					$input = $_GET['search_in'];
+					$preference = $_GET['preference'];
 					
 					$mysqli = new mysqli("localhost", "root", "", "site_list");
 					//in the event that mysql cannot connect to the database
@@ -61,8 +63,14 @@
 						$stmt->execute();
 						
 						$result = mysqli_stmt_get_result($stmt);
+						$elem_count = 0;
 						while ($row = mysqli_fetch_array($result)) {
+							++$elem_count;
 							echo "<li><a href='" . $row[1] . "'>" . htmlentities($row[0]) . "</a></li>";
+						}
+						
+						if ($elem_count == 0) {
+							echo "<li>Sorry! No search results!</li>";
 						}
 					}
 					

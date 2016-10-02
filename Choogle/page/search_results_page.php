@@ -19,6 +19,7 @@
 		<div id="frame">
 			<?php
 				$input = $_GET['search_in'];
+				
 				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
 			?>
 				<p>Sorry! Your browser does not support iframes!</p>

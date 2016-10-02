@@ -49,23 +49,10 @@ function resizeIframe() {
 	iframe.height = height * 0.80;
 }
 
-/* Fills webpage with 20 links at a time of the results from the search */
-function populateSearch() {
-	const linksPerPage = 20;
-	var page = 0, numPages = 0;//Search results / linksPerPage
-	
-	//Display upto 20 results per page
-	for(var i = 0; i < linksPerPage; ++i) {
-		var toAdd = document.getElementsByName("searchList")[i];
-	}
-}
-
 window.onload = function() {
 	hideSpecificLists();
 	if (document.getElementById("general_cat") != null)
 		document.getElementById("general_cat").onchange = showSpecificList;
 	if (document.getElementById("iframe") != null)
 		resizeIframe();
-	document.getElementById("feedback_submit").onload = backToHome;
-	
 };
