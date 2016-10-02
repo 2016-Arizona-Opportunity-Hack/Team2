@@ -10,7 +10,7 @@ body {
 	background-position: 0px 160px;
 	font-size: large;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: 	#c91dc9;
+	color: 	black;
 }
 
 /*NAVIGATION CSS*/
@@ -39,11 +39,15 @@ div.title span#title_head {
 
 nav {
 	font-family: sans-serif;
-	background: yellowgreen;
-	padding: 5px;;
+	background-color: #BBB;
+	padding: 5px;
 	width: 10%;
 	z-index: 100;
+	margin: 10px;
 	position: fixed;
+	top: 25%;
+	left: 0px;
+	border-radius: 5px;
 }
 /*NAVIGATION CSS*/
 

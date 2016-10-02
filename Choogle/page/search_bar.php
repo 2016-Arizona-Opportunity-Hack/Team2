@@ -1,4 +1,7 @@
 <form action="search_results.php" method="get" id="body">
+	<nav>
+		<h3>Floating navigation</h3>
+	</nav>
 	<div>
 		<input type="text" name="search_in">
 		<input type="submit" value="Search">		
