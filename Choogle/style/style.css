@@ -74,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-	color: red;
+	border: thin groove black;
 	cursor: pointer;
 }
 

@@ -12,22 +12,31 @@
 			div#frame {
 				text-align: right;
 			}
-			
-			div#result_page {
-				background-color: white;
-				margin: auto;
-				margin-left: 230px;
-			}
-			
-			div#result_page ul {
-				list-style-type: none;
-				padding: 25px;
-				border: 1px solid black;
-			}
 		</style>
 	</head>
 	<body>
 		<?php
+			//use of prepared statement and htmlentities to protect agains XSS and SQL Injection
+			$mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
+			$query = "SELECT * FROM site WHERE Name = $[keywords]";
+			if($stmt = $mysqli->prepare($query)){
+				$keywords = $_GET["search_in"];
+				$stmt->bind_param(s, $keywords);
+				$stmt->execute();
+				$stmt->bind_result(htmlentities($name));
+				while($stmt->fetch()){
+					printf("%s", $name);
+				}
+			 $cipher = AES; 
+			 $key = 128;
+			 $data = $name;
+			 $mode =  "ecb";
+			 $iv = 128;
+			 
+			 string mcrypt_encrypt ( string $cipher , string $key , string $data , string $mode [, string $iv ] )
+			}
+			$mysqli->close();
+			
 			//Calling reusable code
 			require_once("menu.php");
 			require_once("search_bar.php");
