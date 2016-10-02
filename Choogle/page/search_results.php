@@ -30,19 +30,13 @@
 				}
 			}
 			$mysqli->close();
-<<<<<<< HEAD
 
-=======
-			
 			//Calling reusable code
->>>>>>> branch 'master' of https://github.com/Opportunity-Hack-2016-AZ/Team2.git
 			require_once("menu.php");
 			require_once("search_bar.php");	
 			require_once("nav.php");
 		?>
-<<<<<<< HEAD
-=======
-		
+
 		<!--iframe to embed other websites-->
 		<div id="frame">
 			<?php
@@ -52,6 +46,5 @@
 				<p>Sorry! Your browser does not support iframes!</p>
 			</iframe>
 		</div>
->>>>>>> branch 'master' of https://github.com/Opportunity-Hack-2016-AZ/Team2.git
 	</body>
 </html>
