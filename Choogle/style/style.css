@@ -4,21 +4,46 @@
 }
 
 body {
-	background-image: url("../image/site_designs/Background Image.png");
+	background-image: url("../image/Background Image.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	font-family: Verdana, Geneva, sans-serif;
 	font-size: large;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: 	#c91dc9;
 }
 
-#nav {
-	width: 10%;
-	float: left;
-	background-color: #d9d9d9;
+/*INPUT FIELD CSS*/
+form {
+	margin: auto;
 }
 
-#input {
+form div {
+	margin-top: 50px;
 	text-align: center;
 }
+
+form div input, form div select {
+	font-size: large;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+form div span {
+	display: block;
+	margin: 15px;
+}
+/*INPUT FIELD CSS*/
+
+/*NAVIGATION CSS*/
+div.nav {
+	background-image: none;
+	border-bottom: medium solid black;
+	background-color: gray;
+	color: black;
+	padding: 25px;
+	text-align: center;
+}
+
+div.nav span#title_head {
+	display: inline-block;
+}
+/*NAVIGATION CSS*/

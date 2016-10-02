@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="../style/style.css">
 	</head>
 	<body>
-		
+		<?php
+			require_once("menu.php");
+		?>
 	</body>
 </html>
