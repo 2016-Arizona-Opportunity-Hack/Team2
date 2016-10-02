@@ -22,8 +22,8 @@
 			$query = "SELECT * FROM site WHERE Name = '$[keywords]'";
 			if($stmt = $mysqli->prepare($query)){
 				$keywords = $_GET["search_in"];
-				$stmt->bind_param(s, %keywords)
-				$stmt-> execute();
+				$stmt->bind_param(s, $keywords)
+				$stmt->execute();
 				$stmt->bind_result(htmlentities($name));
 				while($stmt->fetch()){
 					printf("%s", $name);
