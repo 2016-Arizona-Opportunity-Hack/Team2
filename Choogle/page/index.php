@@ -8,6 +8,7 @@
 			window.onload = function() {
 				var x = value;
 				while(x == 0){
+					
 				document.getElementById(specific_cat).style.visibility = 'block';
 				}
 			};
