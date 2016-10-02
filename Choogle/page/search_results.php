@@ -25,23 +25,6 @@
 				border: 1px solid black;
 			}
 		</style>
-		<script>
-			function getFrame(elem) {
-				
-			}
-		
-			function checkClicks(elems) {
-				for (var i = 0; i < elems.length; ++i)
-					elems[i].onclick = function() {
-						getFrame(elems[i]);
-					};
-			}
-			
-			window.onload = function() {
-				var elems = document.getElementsByTagName("clickme");
-				checkClicks(elems);
-			};
-		</script>
 	</head>
 	<body>
 		<?php
@@ -54,7 +37,8 @@
 			<ul>
 				<?php
 					//use of prepared statement and htmlentities to protect against XSS and SQL Injection
-					$input = $_GET['search_in'];			
+					$input = $_GET['search_in'];
+					
 					$mysqli = new mysqli("localhost", "root", "", "site_list");
 					//in the event that mysql cannot connect to the database
 					if (mysqli_connect_error()) {
@@ -62,15 +46,18 @@
 						exit;
 					}
 					
-					$query = "SELECT * FROM site WHERE name = ?";
-					if($stmt = $mysqli->prepare($query)){
+					$query = "SELECT * FROM site WHERE INSTR(name, ?) > 0";
+					if($stmt = $mysqli->prepare($query)) {
 						$stmt->bind_param('s', $name);
 						$name = strtolower($input);
 						$stmt->execute();
-						while($stmt->fetch()){
-							echo "<li class='clickme' id=''>$name</li>";
+						
+						$result = mysqli_stmt_get_result($stmt);
+						while ($row = mysqli_fetch_array($result)) {
+							echo "<li><a href='" . $row[1] . "'>" . $row[0] . "</a></li>";
 						}
 					}
+					
 					$mysqli->close();
 				?>
 			</ul>
