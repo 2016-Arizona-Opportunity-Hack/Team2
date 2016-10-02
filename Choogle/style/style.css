@@ -13,6 +13,10 @@ body {
 	color: 	black;
 }
 
+body a {
+	text-align: center;
+}
+
 /*NAVIGATION CSS*/
 div.title h1 {
 	font-family: "Lucida Calligraphy", "Verdana", sans-serif;
@@ -74,6 +78,10 @@ nav a:hover {
 img {
 	width: 10%;
 	height: 10%;
+}
+
+h2 {
+	text-align: center;
 }
 /*NAVIGATION CSS*/
 
