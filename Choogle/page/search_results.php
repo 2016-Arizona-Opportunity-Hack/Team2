@@ -18,12 +18,12 @@
 	<body>
 		<?php
 			$mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
-			$query = "SELECT Name, url";
+			$query = "SELECT Name";
 			if($stmt = $mysqli->prepare($query)){
 				$stmt-> execute();
 				$stmt->bind_result($name);
 				while($stmt->fetch()){
-					echo "<h1>name</h1>";
+					echo "<h1>$name</h1>";
 				}
 				$mysqli->close();
 			}
