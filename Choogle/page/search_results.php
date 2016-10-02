@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang = "en">
-	<head
-	<?php
-			$mysqli = new mysqli("localhost","root","siteList");
-			$query = "SELECT Name, url";
-			if($stmt = $mysqli->prepare($query)){
-				$stmt->$execute();
-				$stmt->$bind_result($name);
-				while($stmt->fetch()){
-					printf($name);
-				}
-				$stmt->close();
-			}
-			$mysqli->close();
-		?>
+	<head>
 		<title>Connect to Chandler - Results</title>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
@@ -30,6 +17,17 @@
 	</head>
 	<body>
 		<?php
+			$mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
+			$query = "SELECT Name, url";
+			if($stmt = $mysqli->prepare($query)){
+				$stmt-> execute();
+				$stmt->bind_result($name);
+				while($stmt->fetch()){
+					echo "<h1>name</h1>";
+				}
+				$mysqli->close();
+			}
+			
 			require_once("menu.php");
 			require_once("search_bar.php");	
 			require_once("nav.php");
