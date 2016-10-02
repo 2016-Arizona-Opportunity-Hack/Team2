@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="../style/style.css">
 		<script>
 			function hideSpecificLists() {
-				var specificLists = document.getElementsByTagName("specific_cat");
+				var specificLists = document.getElementsByClassName("specific_cat");
 				for (var i = 0; i < specificLists.length; ++i)
 					specificLists[i].style.display = "none";
 			}
