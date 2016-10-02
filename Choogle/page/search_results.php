@@ -14,7 +14,6 @@
 			}
 		</style>
 	</head>
-
 	<body>
 		<?php
 			//use of prepared statement and htmlentities to protect agains XSS and SQL Injection
@@ -27,15 +26,7 @@
 				$stmt->bind_result(htmlentities($name));
 				while($stmt->fetch()){
 					printf("%s", $name);
-				
- $cipher = AES; 
- $key = 128;
- $data = $name;
- $mode =  "ecb";
- $iv = 128;
- 
- string mcrypt_encrypt ( string $cipher , string $key , string $data , string $mode [, string $iv ] )
- ?>
+				}
 			}
 			$mysqli->close();
 
