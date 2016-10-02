@@ -10,10 +10,6 @@
 			div#frame {
 				text-align: right;
 			}
-			
-			form {
-				margin-top: -50px;
-			}
 		</style>
 	</head>
 	<body>
@@ -38,6 +34,13 @@
 			require_once("nav.php");
 		?>
 		
-		<!-- Fill in results list here -->
+		<div id="frame">
+			<?php
+				$input = $_GET['search_in'];
+				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
+			?>
+				<p>Sorry! Your browser does not support iframes!</p>
+			</iframe>
+		</div>
 	</body>
 </html>

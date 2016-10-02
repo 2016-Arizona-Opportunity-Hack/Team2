@@ -6,15 +6,6 @@
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
 		<script src="../script/script.js"></script>
-		<style>		
-			div#frame {
-				text-align: right;
-			}
-			
-			form {
-				margin-top: -50px;
-			}
-		</style>
 	</head>
 	<body>
 		<!-- Call necessary php resources needed for this page -->
@@ -23,13 +14,6 @@
 			require_once("nav.php");
 		?>
 		
-		<div id="frame">
-			<?php
-				$input = $_GET['search_in'];
-				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
-			?>
-				<p>Sorry! Your browser does not support iframes!</p>
-			</iframe>
-		</div>
+		<!-- Fill in results list here -->
 	</body>
 </html>
