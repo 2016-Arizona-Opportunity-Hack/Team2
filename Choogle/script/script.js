@@ -45,6 +45,16 @@ function resizeIframe() {
 	iframe.height = height * 0.80;
 }
 
+function populateSearch() {
+	const linksPerPage = 20;
+	var page = 0, numPages = 0;//Search results / linksPerPage
+	
+	//Display upto 20 results per page
+	for(var i = 0; i < linksPerPage; ++i) {
+		var toAdd = document.getElementsByName("searchList")[i];
+	}
+}
+
 window.onload = function() {
 	hideSpecificLists();
 	if (document.getElementById("general_cat") != null)

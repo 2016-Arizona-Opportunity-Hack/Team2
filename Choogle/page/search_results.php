@@ -5,7 +5,9 @@
 		<title>Connect to Chandler - Results</title>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
-		<script src="../script/script.js"></script>
+		<script src="../script/script.js">
+			window.onload = populateSearch();
+		</script>
 		<style>		
 			div#frame {
 				text-align: right;
@@ -30,17 +32,8 @@
 
 			//Calling reusable code
 			require_once("menu.php");
-			require_once("search_bar.php");	
+			require_once("search_bar.php");
 			require_once("nav.php");
 		?>
-		
-		<div id="frame">
-			<?php
-				$input = $_GET['search_in'];
-				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
-			?>
-				<p>Sorry! Your browser does not support iframes!</p>
-			</iframe>
-		</div>
 	</body>
 </html>

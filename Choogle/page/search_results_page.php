@@ -5,7 +5,9 @@
 		<title>Connect to Chandler - Results</title>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
-		<script src="../script/script.js"></script>
+		<script src="../script/script.js">
+			populateSearch();
+		</script>
 	</head>
 	<body>
 		<!-- Call necessary php resources needed for this page -->
@@ -14,6 +16,13 @@
 			require_once("nav.php");
 		?>
 		
-		<!-- Fill in results list here -->
+		<div id="frame">
+			<?php
+				$input = $_GET['search_in'];
+				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
+			?>
+				<p>Sorry! Your browser does not support iframes!</p>
+			</iframe>
+		</div>
 	</body>
 </html>
