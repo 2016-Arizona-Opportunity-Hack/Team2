@@ -1,3 +1,4 @@
+<!-- Create identical heading for all pages who use this php file -->
 <div class="title">
 	<span id="title_head">
 		<h1>Connect Chandler</h1>

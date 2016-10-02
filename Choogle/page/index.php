@@ -7,6 +7,7 @@
 		<script src="../script/script.js"></script>
 	</head>
 	<body>
+		<!-- Call needed php resource pages for this page -->
 		<?php
 			require_once('menu.php');
 			require_once("nav.php");
