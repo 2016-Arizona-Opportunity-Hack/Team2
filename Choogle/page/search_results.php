@@ -18,6 +18,9 @@
 	</head>
 	<body>
 		<?php
+			//implement the prepared statement
+			$search_input = $_GET['search_in'];
+		
 			require_once("menu.php");
 			require_once("search_bar.php");	
 		?>
