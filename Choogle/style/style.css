@@ -49,6 +49,10 @@ nav {
 	left: 0px;
 	border-radius: 5px;
 }
+
+nav h3 {
+	text-decoration: underline;
+}
 /*NAVIGATION CSS*/
 
 /*INPUT FIELD CSS*/

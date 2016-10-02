@@ -1,6 +1,14 @@
 <form action="search_results.php" method="get" id="body">
 	<nav>
-		<h3>Floating navigation</h3>
+		<h3>Chandler Chamber of Commerce</h3>
+		<a href = "https://www.facebook.com/ChandlerChamber">Facebook</a>
+		<a href = "https://twitter.com/chandlerchamber">Twitter</a>
+		<a href = "https://plus.google.com/+Chandlerchamber">Google+</a>
+		<a href = "https://www.youtube.com/user/ChandlerChamber1">YouTube</a>
+		<a href = "https://www.linkedin.com/company/chandler-chamber-of-commerce">Linked in</a>
+		<a href = "https://www.yelp.com/biz/chandler-chamber-of-commerce-chandler-2">Yelp</a>
+		<a href = "https://www.instagram.com/chandlerchamber/">Instagram</a>
+		<a href = "calendar.php">Calendar of Events</a>
 	</nav>
 	<div>
 		<input type="text" name="search_in">
