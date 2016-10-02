@@ -19,7 +19,11 @@
 	<body>
 		<?php
 			//implement the prepared statement
-			$search_input = $_GET['search_in'];
+			$prepstat = $conn->prepare(SELECT * FROM site);
+			$prepstat = $bindParam($keywords);
+			
+			$keywords = $_GET['search_in'];
+			$prepstat->execute();
 		
 			require_once("menu.php");
 			require_once("search_bar.php");	
