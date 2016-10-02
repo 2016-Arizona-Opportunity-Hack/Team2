@@ -4,6 +4,14 @@
 		<title>Connect to Chandler - Home</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		<link rel="stylesheet" href="../style/style.css">
+		<script>
+			window.onload = function() {
+				var x = value;
+				while(x == 0){
+				document.getElementById(specific_cat).style.visibility = 'block';
+				}
+			};
+		</script>
 	</head>
 	<body>
 		<?php
@@ -21,7 +29,7 @@
 					<option value=''></option>
 				</select>
 				
-				<select name="specific_cat">
+				<select name="specific_cat" id "specific_cat" = 0>
 					<option value="Advertising & Media">Advertising & Media</option>
 					<option value="Arts, Culture & Entertainment">Arts, Culture & Entertainment</option>
 					<option value="Automotive & Marine">Automotive & Marine</option>
