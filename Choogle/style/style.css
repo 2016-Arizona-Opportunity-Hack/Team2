@@ -23,7 +23,7 @@ div.title h1 {
 
 div.title {
 	background-image: none;
-	background: -webkit-linear-gradient(#222, transparent);
+	background: -webkit-linear-gradient(#555, transparent);
 	color: black;
 	padding: 25px;
 	text-align: center;
@@ -45,17 +45,30 @@ nav {
 	z-index: 100;
 	margin: 10px;
 	position: fixed;
-	top: 25%;
+	top: 30%;
 	left: 0px;
 	border-radius: 10px;
 }
 
 nav h3 {
 	text-decoration: underline;
+	font-size: 100%;
+	text-align: center;
 }
 
 nav ul {
 	list-style-type: none;
+	margin: 15px 0px;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 2px;
+	color: black;
+}
+
+nav a:hover {
+	border: thin groove black;
 }
 
 img {

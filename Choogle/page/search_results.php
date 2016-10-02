@@ -7,7 +7,8 @@
 		<script src="../script/dropdown.js"></script>
 		<style>		
 			div#frame {
-				text-align: center;
+				text-align: right;
+				clear: left;
 			}
 			
 			form {
@@ -22,7 +23,7 @@
 		?>
 		
 		<div id="frame">
-			<iframe id="iframe" name = "frame" src = "http://www.chandlerchamber.com/" scrolling = "auto">
+			<iframe id="iframe" name = "frame" src = "http://www.chandlerchamber.com/">
 				<p>Sorry! Your browser does not support iframes!</p>
 			</iframe>
 		</div>

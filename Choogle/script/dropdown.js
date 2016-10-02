@@ -36,7 +36,7 @@ function resizeIframe() {
 		height = window.innerHeight;
 	
 	//width and height set equal to the window dimensions multiplied by a percentage
-	iframe.width = width * 0.97;
+	iframe.width = width * 0.85;
 	iframe.height = height * 0.80;
 }
 
