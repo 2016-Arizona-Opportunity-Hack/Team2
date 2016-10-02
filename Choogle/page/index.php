@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="../style/style.css">
 		<script>
 			window.onload = function() {
-				var x = value;
+				var x = document.getElementById(value);
 				while(x == 0){
 					
 				document.getElementById("specific_cat").style.visibility = 'hidden';
@@ -22,6 +22,18 @@
 			<div>
 				<input type="text" name="search_in">
 				<input type="submit" value="Search">
+<<<<<<< HEAD
+=======
+					
+				<select name="general_cat">
+					<option value="1">General</option>
+					<option value="2">Living & Transportation</option>
+					<option value="3">Recreation & Culture</option>
+					<option value="4">Businesses & Organizations</option>
+					<option value="5">Government</option>
+					<option value="6">Care & Services</option>
+				</select>
+>>>>>>> f2055114d3710cfeb391ab7fbddf0870b59a8e33
 				
 				<span>
 					<select name="general_cat">
