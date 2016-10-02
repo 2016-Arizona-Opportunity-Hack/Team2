@@ -22,8 +22,26 @@
 			div#result_page ul {
 				list-style-type: none;
 				padding: 25px;
+				border: 1px solid black;
 			}
 		</style>
+		<script>
+			function getFrame(elem) {
+				
+			}
+		
+			function checkClicks(elems) {
+				for (var i = 0; i < elems.length; ++i)
+					elems[i].onclick = function() {
+						getFrame(elems[i]);
+					};
+			}
+			
+			window.onload = function() {
+				var elems = document.getElementsByTagName("clickme");
+				checkClicks(elems);
+			};
+		</script>
 	</head>
 	<body>
 		<?php
@@ -50,7 +68,7 @@
 						$name = strtolower($input);
 						$stmt->execute();
 						while($stmt->fetch()){
-							echo "<li><a href='search_result_page.php'>$name</a></li>";
+							echo "<li class='clickme' id=''>$name</li>";
 						}
 					}
 					$mysqli->close();
