@@ -27,23 +27,6 @@
 	</head>
 	<body>
 		<?php
-<<<<<<< HEAD
-=======
-			//use of prepared statement and htmlentities to protect agains XSS and SQL Injection
-			$mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
-			$query = "SELECT * FROM site WHERE Name = $[keywords]";
-			if($stmt = $mysqli->prepare($query)){
-				$keywords = $_GET["search_in"];
-				$stmt->bind_param(s, $keywords);
-				$stmt->execute();
-				$stmt->bind_result(htmlentities($name));
-				while($stmt->fetch()){
-					printf("%s", $name);
-				}
-			}
-			$mysqli->close();
-
->>>>>>> 4e80826c509795503fc348e023921735e004086b
 			//Calling reusable code
 			require_once("menu.php");
 			require_once("search_bar.php");
