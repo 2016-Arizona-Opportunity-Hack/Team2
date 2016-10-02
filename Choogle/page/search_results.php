@@ -20,6 +20,9 @@
 			require_once("menu.php");
 			require_once("search_bar.php");	
 		?>
+		<nav>
+			<h3>Floating navigation</h3>
+		</nav>
 		
 		<div id="frame">
 			<iframe id="iframe" name = "frame" src = "http://www.chandlerchamber.com/" scrolling = "auto">
