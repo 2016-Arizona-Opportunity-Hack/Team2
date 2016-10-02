@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>Connect to Chandler - Home</title>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
 		<script src="../script/dropdown.js"></script>
 	</head>
