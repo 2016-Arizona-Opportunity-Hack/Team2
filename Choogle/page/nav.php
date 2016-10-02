@@ -1,3 +1,4 @@
+<!-- Defines the floating navigation menu on each site with links to social media -->
 <nav>
 	<h3>Chandler Chamber of Commerce</h3>
 	<ul>

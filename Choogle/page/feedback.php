@@ -1,3 +1,4 @@
+<!-- File to build and organize the feedback page of the website -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -11,10 +12,12 @@
 		</style>
 	</head>
 	<body>
+		<!-- Call necessary php resources needed for this page -->
 		<?php
 			require_once("menu.php");
 			require_once("nav.php");
 		?>
+		<!-- Take in user text feedback -->
 		<h2>Have any concerns? Enter your feedback below!</h2>
 		<form action="feedback_submit.php" method="post">
 			<div>

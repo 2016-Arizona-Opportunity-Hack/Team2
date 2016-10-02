@@ -1,3 +1,4 @@
+<!-- Thank you page to thank user after submitting feedback -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,6 +8,7 @@
 		<script src="../script/dropdown.js"></script>
 	</head>
 	<body>
+		<!-- Call necessary php resources needed for this page -->
 		<?php
 			require_once("menu.php");
 			require_once("nav.php");

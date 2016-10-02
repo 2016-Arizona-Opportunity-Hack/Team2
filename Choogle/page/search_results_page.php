@@ -1,3 +1,4 @@
+<!-- Shows embeded display of chosen website from search results -->
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
@@ -16,6 +17,7 @@
 		</style>
 	</head>
 	<body>
+		<!-- Call necessary php resources needed for this page -->
 		<?php
 			require_once("menu.php");
 			require_once("nav.php");

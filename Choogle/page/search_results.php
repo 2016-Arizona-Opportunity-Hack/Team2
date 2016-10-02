@@ -1,3 +1,4 @@
+<!-- Page showing search results after user searches -->
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
@@ -36,15 +37,7 @@
 			require_once("search_bar.php");	
 			require_once("nav.php");
 		?>
-
-		<!--iframe to embed other websites-->
-		<div id="frame">
-			<?php
-				$input = $_GET['search_in'];
-				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
-			?>
-				<p>Sorry! Your browser does not support iframes!</p>
-			</iframe>
-		</div>
+		
+		<!-- Fill in results list here -->
 	</body>
 </html>

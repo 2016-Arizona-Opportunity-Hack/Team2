@@ -1,9 +1,13 @@
+/* Contains all js functions needed by multiple pages of the website */
+
+/* Hides the dropdown menus of the specific categories until a general category is chosen */
 function hideSpecificLists() {
 	var specificLists = document.getElementsByClassName("specific_cat");
 	for (var i = 0; i < specificLists.length; ++i)
 		specificLists[i].style.display = "none";
 }
 
+/* Displays the appropriate specific categories list dependent on the general list choice */
 function showSpecificList()	{
 	hideSpecificLists();
 	
@@ -29,6 +33,7 @@ var toShow = document.getElementById("general_cat"),
 	}
 }
 
+/* Resizes the iFrame to the correct size of the webpage */
 function resizeIframe() {
 	//define iframe
 	var iframe = document.getElementById("iframe"),
