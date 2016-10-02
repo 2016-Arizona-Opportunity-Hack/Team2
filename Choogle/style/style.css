@@ -31,22 +31,16 @@ form div span {
 	display: block;
 	margin: 15px;
 }
-/*SPECIFIC LIST STYLE*/
-
-
-
-/*SPECIFIC LIST STYLE*/
 /*INPUT FIELD CSS*/
 
 /*NAVIGATION CSS*/
 div.title h1 {
-	font-family: "Lucida Calligraphy", cursive;
+	font-family: "Lucida Calligraphy", "Verdana", sans-serif;
 	font-style: oblique;
 }
 
 div.title {
 	background-image: none;
-	border-bottom: medium solid black;
 	background-color: gray;
 	color: black;
 	padding: 25px;
