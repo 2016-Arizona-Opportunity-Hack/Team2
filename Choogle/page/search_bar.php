@@ -1,6 +1,7 @@
 <!-- Defines the general and specific dropdown menus for the search bar and the bar itself -->
 <form action="search_results.php" method="get" id="body">
 	<div>
+		<h2><i>Enter here to search Chandler</i></h2>
 		<input type="text" name="search_in">
 		<input type="submit" value="Search">		
 		<span>
@@ -15,7 +16,7 @@
 			</select>
 			
 			<!-- List 1 of specific categories to choose -->
-			<select name='specific_l&amp;t' id = "Living and Transportation" class = "specific_cat">
+			<select name='specific_l&amp;t' id = "Living & Transportation" class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Automotive &amp; Marine">Automotive &amp; Marine</option>
 				<option value="Construction Equipment &amp; Contractors">Construction Equipment &amp; Contractors</option>

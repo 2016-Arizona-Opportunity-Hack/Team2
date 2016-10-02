@@ -55,16 +55,20 @@ function setPreference() {
 	var specificListList = document.getElementsByClassName("specific_cat");
 	var specificList = null;
 	
-	alert(general);
 	for (var i = 0; i < specificListList.length; ++i) {
-		alert(specificListList[i].name);
-		if (specificListList[i].name == general) {
+		if (specificListList[i].id == general) {
 			specificList= specificListList[i];
 			break;
 		}
 	}
 	
-	alert(specificList.options[specificList.selectedIndex]);
+	if (specificList == null) {
+		inputBox.value = "General";
+		return true;
+	}
+	
+	var value = specificList.id + "/" + specificList.options[specificList.selectedIndex].value;
+	inputBox.value = value;
 }
 
 window.onload = function() {

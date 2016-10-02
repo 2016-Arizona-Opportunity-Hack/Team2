@@ -49,6 +49,8 @@
 					$input = $_GET['search_in'];
 					$preference = $_GET['preference'];
 					
+					echo "<h1>Preference: $preference</h1>";
+					
 					$mysqli = new mysqli("localhost", "root", "", "site_list");
 					//in the event that mysql cannot connect to the database
 					if (mysqli_connect_error()) {
@@ -56,17 +58,25 @@
 						exit;
 					}
 					
-					$query = "SELECT * FROM site WHERE INSTR(name, ?) > 0";
+					$query = "";
+					if ($preference == "General") {
+						$query = "SELECT * FROM site_list WHERE INSTR(name, ?) > 0 --?";
+					}
+					else {
+						$query = "SELECT * FROM site_list WHERE INSTR(name, ?) > 0 && category = ?";
+					}
+					
 					if($stmt = $mysqli->prepare($query)) {
-						$stmt->bind_param('s', $name);
+						$stmt->bind_param('ss', $name, $category);
 						$name = strtolower($input);
+						$category = strtolower($preference);
 						$stmt->execute();
 						
 						$result = mysqli_stmt_get_result($stmt);
 						$elem_count = 0;
 						while ($row = mysqli_fetch_array($result)) {
 							++$elem_count;
-							echo "<li><a href='" . $row[1] . "'>" . htmlentities($row[0]) . "</a></li>";
+							echo "<li><a href='search_results_page.php?link=" . $row[1] . "'>" . htmlentities($row[0]) . "</a></li>";
 						}
 						
 						if ($elem_count == 0) {

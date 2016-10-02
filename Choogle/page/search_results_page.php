@@ -4,10 +4,13 @@
 	<head>
 		<title>Connect to Chandler - Results</title>
 		<meta charset="ISO-8859-1">
+		<script src="../script/script.js"></script>
 		<link rel="stylesheet" href="../style/style.css">
-		<script src="../script/script.js">
-			populateSearch();
-		</script>
+		<style>
+			div#frame {
+				margin-left: 200px;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Call necessary php resources needed for this page -->
@@ -18,9 +21,7 @@
 		
 		<div id="frame">
 			<?php
-				$input = $_GET['search_in'];
-				
-				echo "<iframe id='iframe' name = 'frame' src = '$input'>";
+				echo "<iframe id='iframe' name = 'frame' src='" . $_GET['link'] . "'>";
 			?>
 				<p>Sorry! Your browser does not support iframes!</p>
 			</iframe>
