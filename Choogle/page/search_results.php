@@ -2,7 +2,7 @@
 <html lang = "en">
 	<head
 	<?
-		$mysqli = new mysqli("localhost","root","siteList");
+		$mysqli = new mysqli("localhost","root","NO","siteList");
 		$query = "SELECT Name, url";
 		if($stmt = $mysqli->prepare($query)){
 			stmt-> execute();
