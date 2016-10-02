@@ -19,19 +19,19 @@ var toShow = document.getElementById("general_cat"),
 	selectedVal = toShow.options[toShow.selectedIndex];
 	
 	switch (parseInt(selectedVal.value)) {
-		case 1:
+		case "Living & Transportation":
 			document.getElementsByName("specific_l&t")[0].style.display = "inline-block";
 			break;
-		case 2: 
+		case "Recreation & Culture": 
 			document.getElementsByName("specific_r&c")[0].style.display = "inline-block";
 			break;
-		case 3: 
+		case "Businesses & Organizations": 
 			document.getElementsByName("specific_b&o")[0].style.display = "inline-block";
 			break;
-		case 4: 
+		case "Government": 
 			document.getElementsByName("specific_g")[0].style.display = "inline-block";
 			break;
-		case 5: 
+		case "Care & Services": 
 			document.getElementsByName("specific_c&s")[0].style.display = "inline-block";
 			break;
 	}
