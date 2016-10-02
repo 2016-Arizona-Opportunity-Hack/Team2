@@ -5,39 +5,40 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		<link rel="stylesheet" href="../style/style.css">
 		<script>
-			//hide the specific lists
 			function hideSpecificLists() {
 				var specificLists = document.getElementsByClassName("specific_cat");
 				for (var i = 0; i < specificLists.length; ++i)
 					specificLists[i].style.display = "none";
 			}
-			function showSpecificList()	 {
+			
+			function showSpecificList()	{
 				hideSpecificLists();
 				
-				var toShow = document.getElementById("general_cat");
+			var toShow = document.getElementById("general_cat"),
+				selectedVal = toShow.options[toShow.selectedIndex];
 				
-				switch (toShow.value){
+				switch (parseInt(selectedVal.value)) {
 					case 1:
-						specific_l&t.style.display = "inline";
+						document.getElementsByName("specific_l&t")[0].style.display = "inline";
 						break;
 					case 2: 
-						specific_r&c.style.display = "inline";
+						document.getElementsByName("specific_r&c")[0].style.display = "inline-block";
 						break;
 					case 3: 
-						specific_b&o.style.display = "inline";
+						document.getElementsByName("specific_b&o")[0].style.display = "inline-block";
 						break;
 					case 4: 
-						specific_g.style.display = "inline";
+						document.getElementsByName("specific_g")[0].style.display = "inline-block";
 						break;
 					case 5: 
-						specific_c&s.style.display = "inline";
+						document.getElementsByName("specific_c&s")[0].style.display = "inline-block";
 						break;
 				}
-				
-				
 			}
+			
 			window.onload = function() {
-				//hideSpecificLists();
+				hideSpecificLists();
+				document.getElementById("general_cat").onchange = showSpecificList;
 			};
 		</script>
 	</head>
