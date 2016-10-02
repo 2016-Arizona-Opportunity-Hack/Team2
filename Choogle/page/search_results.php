@@ -5,13 +5,26 @@
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
 		<script src="../script/dropdown.js"></script>
+		<style>		
+			div#frame {
+				text-align: center;
+			}
+			
+			form {
+				margin-top: -50px;
+			}
+		</style>
 	</head>
 	<body>
 		<?php
 			require_once("menu.php");
-			require_once('search_bar.php');
+			require_once("search_bar.php");	
 		?>
 		
-		<iframe name = "frame" src = "http://www.google.com" width = "85%" marginwidth = "10px" marginheight = "10px" scrolling = "auto"></iframe>
+		<div id="frame">
+			<iframe id="iframe" name = "frame" src = "http://www.chandlerchamber.com/" scrolling = "auto">
+				<p>Sorry! Your browser does not support iframes!</p>
+			</iframe>
+		</div>
 	</body>
 </html>

@@ -29,7 +29,21 @@ var toShow = document.getElementById("general_cat"),
 	}
 }
 
+function resizeIframe() {
+	//define iframe
+	var iframe = document.getElementById("iframe"),
+		width = window.innerWidth,
+		height = window.innerHeight;
+	
+	//width and height set equal to the window dimensions multiplied by a percentage
+	iframe.width = width * 0.97;
+	iframe.height = height * 0.80;
+}
+
+window.onload = resizeIframe;
+
 window.onload = function() {
 	hideSpecificLists();
 	document.getElementById("general_cat").onchange = showSpecificList;
+	resizeIframe();
 };

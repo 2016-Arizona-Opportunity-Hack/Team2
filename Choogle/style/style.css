@@ -7,7 +7,7 @@ body {
 	background-image: url("../image/Background Image.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: 0px 200px;
+	background-position: 0px 160px;
 	font-size: large;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: 	#c91dc9;
@@ -51,6 +51,10 @@ form div {
 form div input, form div select {
 	font-size: large;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+form div input[type="submit"] {
+	padding: 5px;
 }
 
 form div span {
