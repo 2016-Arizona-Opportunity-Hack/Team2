@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang = "en">
-	<head>
+	<head
+	<?
+		$mysqli = new mysqli("localhost","root","siteList");
+		$query = "SELECT Name, url";
+		if($stmt = $mysqli->prepare($query)){
+			stmt-> execute();
+			stmt->bind_result($name);
+			while($stmt->fetch()){
+				printf($name);
+				
+			}
+			stmt->close();
+			}
+		mysqli->close();
+		?>
 		<title>Connect to Chandler - Results</title>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
