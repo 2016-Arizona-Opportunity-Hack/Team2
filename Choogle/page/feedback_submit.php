@@ -5,9 +5,9 @@
 		<title>Connect to Chandler - Forum</title>
 		<meta charset="ISO-8859-1">
 		<link rel="stylesheet" href="../style/style.css">
-		<script src="../script/dropdown.js"></script>
+		<script src="../script/script.js"></script>
 	</head>
-	<body>
+	<body id="feedback_submit">
 		<!-- Call necessary php resources needed for this page -->
 		<?php
 			require_once("menu.php");
@@ -16,20 +16,19 @@
 			$name = $_POST['username'];
 			$feedback = $_POST['feedback'];
 			
-			$dbc = mysqli_connect("localhost", "root", "", "user_feedback") or die("could not load database");
+			$mysql = new mysqli("localhost", "root", "", "user_feedback") or die("could not load database");
 			$query = "INSERT INTO user_feedback (name, feedback) VALUES (?, ?);";
 			
-			if($stmt = $mysqli->prepare($query)){
-				$stmt->bind_param("sss", $name, $feedback)
+			if($stmt = $mysql->prepare($query)){
+				$stmt->bind_param("ss", $name, $feedback);
 				
-				$name = $_POST["name"];
+				$name = $_POST["username"];
 				$feedback = $_POST["feedback"];
 				
 				$stmt->execute();
-				$result = mysqli_query($dbc, $query) or die('Error submitting query');
 			}
 			
-			mysqli_close($dbc);
+			$mysql->close();
 		?>
 		
 		<h2>Thank you for your submition, it has been recorded.</h2>

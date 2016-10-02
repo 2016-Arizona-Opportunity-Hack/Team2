@@ -7,6 +7,10 @@ function hideSpecificLists() {
 		specificLists[i].style.display = "none";
 }
 
+function backToHome() {
+	setTimeout("window.location.href = 'index.php'", 5 * 1000);
+}
+
 /* Displays the appropriate specific categories list dependent on the general list choice */
 function showSpecificList()	{
 	hideSpecificLists();
@@ -62,4 +66,6 @@ window.onload = function() {
 		document.getElementById("general_cat").onchange = showSpecificList;
 	if (document.getElementById("iframe") != null)
 		resizeIframe();
+	document.getElementById("feedback_submit").onload = backToHome;
+	
 };
