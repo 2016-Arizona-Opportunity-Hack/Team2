@@ -18,7 +18,7 @@ function showSpecificList()	{
 var toShow = document.getElementById("general_cat"),
 	selectedVal = toShow.options[toShow.selectedIndex];
 	
-	switch (parseInt(selectedVal.value)) {
+	switch (selectedVal.value) {
 		case "Living & Transportation":
 			document.getElementsByName("specific_l&t")[0].style.display = "inline-block";
 			break;
@@ -49,10 +49,29 @@ function resizeIframe() {
 	iframe.height = height * 0.80;
 }
 
+function setPreference() {
+	var inputBox = document.getElementById("preference");
+	var general = document.getElementById("general_cat").value;
+	var specificListList = document.getElementsByClassName("specific_cat");
+	var specificList = null;
+	
+	alert(general);
+	for (var i = 0; i < specificListList.length; ++i) {
+		alert(specificListList[i].name);
+		if (specificListList[i].name == general) {
+			specificList= specificListList[i];
+			break;
+		}
+	}
+	
+	alert(specificList.options[specificList.selectedIndex]);
+}
+
 window.onload = function() {
 	hideSpecificLists();
 	if (document.getElementById("general_cat") != null)
 		document.getElementById("general_cat").onchange = showSpecificList;
 	if (document.getElementById("iframe") != null)
 		resizeIframe();
+	document.getElementById("body").onsubmit = setPreference;
 };

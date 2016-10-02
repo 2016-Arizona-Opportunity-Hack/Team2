@@ -7,7 +7,7 @@
 			<!-- The list of general categories to choose -->
 			<select name="general_cat" id = "general_cat">
 				<option value="General">General</option>
-				<option value="Living and Transportation">Living &amp; Transportation</option>
+				<option value="Living & Transportation">Living &amp; Transportation</option>
 				<option value="Recreation & Culture">Recreation &amp; Culture</option>
 				<option value="Businesses & Organizations">Businesses &amp; Organizations</option>
 				<option value="Government">Government</option>
@@ -68,6 +68,6 @@
 				<option value="Repair">Repair</option>
 			</select>
 		</span>
-		<input type="hidden" value="0" name="preference">
+		<input type="hidden" value="0" name="preference" id="preference">
 	</div>
 </form>
