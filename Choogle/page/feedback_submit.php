@@ -13,23 +13,23 @@
 			require_once("menu.php");
 			require_once("nav.php");
 			
-			$name = $_POST['username'];
-			$feedback = $_POST['feedback'];
-			
-			$dbc = mysqli_connect("localhost", "root", "", "user_feedback") or die("could not load database");
-			$query = "INSERT INTO user_feedback (name, feedback) VALUES (?, ?);";
-			
-			if($stmt = $mysqli->prepare($query)){
-				$stmt->bind_param("sss", $name, $feedback)
-				
-				$name = $_POST["name"];
-				$feedback = $_POST["feedback"];
-				
-				$stmt->execute();
-				$result = mysqli_query($dbc, $query) or die('Error submitting query');
+			$mysqli = new mysqli("localhost", "root", "", "user_feedback");
+			if (mysqli_connect_error()) {
+				echo mysqli_connect_error();
+				exit;
 			}
 			
-			mysqli_close($dbc);
+			$query = "INSERT INTO user_feedback (name, feedback) VALUES (?, ?);";	
+			if($stmt = $mysqli->prepare($query)){
+				$stmt->bind_param("ss", $name, $feedback);
+				
+				$name = $_POST['username'];
+				$feedback = $_POST['feedback'];
+				
+				$stmt->execute();
+			}
+			
+			mysqli_close($mysqli);
 		?>
 		
 		<h2>Thank you for your submition, it has been recorded.</h2>
