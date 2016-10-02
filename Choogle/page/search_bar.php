@@ -15,7 +15,7 @@
 			</select>
 			
 			<!-- List 1 of specific categories to choose -->
-			<select name='specific_l&amp;t' class = "specific_cat">
+			<select name='specific_l&amp;t' id = "Living and Transportation" class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Automotive &amp; Marine">Automotive &amp; Marine</option>
 				<option value="Construction Equipment &amp; Contractors">Construction Equipment &amp; Contractors</option>
@@ -28,7 +28,7 @@
 			</select>
 			
 			<!-- List 2 of specific categories to choose -->
-			<select name='specific_r&amp;c' class = "specific_cat">
+			<select name='specific_r&amp;c' id = "Recreation & Culture" class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Arts, Culture &amp; Entertainment">Arts, Culture &amp; Entertainment</option>
 				<option value="Restaurants, Food &amp; Beverages">Restaurants, Food &amp; Beverages</option>
@@ -37,7 +37,7 @@
 			</select>
 			
 			<!-- List 3 of specific categories to choose -->
-			<select name='specific_b&amp;o' class = "specific_cat">
+			<select name='specific_b&amp;o' id = "Businesses & Organizations" class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Advertising &amp; Media">Advertising &amp; Media</option>
 				<option value="Business &amp; Professional Services">Business &amp; Professional Services</option>
@@ -49,7 +49,7 @@
 			</select>
 			
 			<!-- List 4 of specific categories to choose -->
-			<select name='specific_g' class = "specific_cat">
+			<select name='specific_g' id = "Government" class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Chairman's Circle'">Chairman's Circle</option>
 				<option value="Government, Education &amp; Individuals">Government, Education &amp; Individuals</option>
@@ -57,7 +57,7 @@
 			</select>
 			
 			<!-- List 5 of specific categories to choose -->
-			<select name="specific_c&amp;s" class = "specific_cat">
+			<select name="specific_c&amp;s" id = "Care & Services" class = "specific_cat">
 				<option value="Specific">Specific</option>
 				<option value="Child Care">Child Care</option>
 				<option value="Computers &amp; Telecommunications">Computers &amp; Telecommunications</option>
