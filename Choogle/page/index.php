@@ -19,7 +19,7 @@
 				
 				switch (parseInt(selectedVal.value)) {
 					case 1:
-						document.getElementsByName("specific_l&t")[0].style.display = "inline";
+						document.getElementsByName("specific_l&t")[0].style.display = "inline-block";
 						break;
 					case 2: 
 						document.getElementsByName("specific_r&c")[0].style.display = "inline-block";
