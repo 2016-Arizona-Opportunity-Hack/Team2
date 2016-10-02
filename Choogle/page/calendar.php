@@ -8,7 +8,6 @@
 		<style>
 			div#frame {
 				text-align: right;
-				clear: left;
 			}
 		</style>
 	</head>
