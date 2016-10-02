@@ -5,8 +5,14 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		<link rel="stylesheet" href="../style/style.css">
 		<script>
-			window.onload = function() {
+			function hideSpecificLists() {
+				var specificLists = document.getElementsByTagName("specific_cat");
+				for (var i = 0; i < specificLists.length; ++i)
+					specificLists[i].style.display = "none";
+			}
 				
+			window.onload = function() {
+				//hideSpecificLists();
 			};
 		</script>
 	</head>
