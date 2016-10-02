@@ -18,16 +18,18 @@
 		<?php
 			require_once('menu.php');
 		?>
-		<form action="search.php" method="get" id="body">
-			<div>
+		<form action="search.php" method="get" id="body" margin="auto>
+			<div id = "input">
 				<input type="text" name="search_in">
 				<input type="submit" value="Search">
 					
 				<select name="general_cat">
-					<option value=''></option>
-					<option value=''></option>
-					<option value=''></option>
-					<option value=''></option>
+					<option value=''>General</option>
+					<option value=''>Living & Transportation</option>
+					<option value=''>Recreation & Culture</option>
+					<option value=''>Businesses & Organizations</option>
+					<option value=''>Government</option>
+					<option value=''>Care & Services</option>
 				</select>
 				
 				<select name="specific_cat" id "specific_cat" = 0>
