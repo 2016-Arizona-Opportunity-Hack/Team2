@@ -9,7 +9,7 @@
 				var x = value;
 				while(x == 0){
 					
-				document.getElementById(specific_cat).style.visibility = 'block';
+				document.getElementById("specific_cat").style.visibility = 'hidden';
 				}
 			};
 		</script>
