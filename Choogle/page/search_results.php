@@ -18,7 +18,18 @@
 	<body>
 		<?php
 			$mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
-			$query = "SELECT Name";
+			$query = "SELECT Name FROM site";
+			if($stmt = $mysqli->prepare($query)){
+				$stmt-> execute();
+				$stmt->bind_result($name);
+				while($stmt->fetch()){
+					printf("%s", $name);
+				}
+			}
+			$mysqli->close();
+			
+			/* $mysqli = mysqli_connect("localhost", "root", "", "site_list") or die('Error loading database');
+			$query = "SELECT Name FROM site";
 			if($stmt = $mysqli->prepare($query)){
 				$stmt-> execute();
 				$stmt->bind_result($name);
@@ -26,7 +37,7 @@
 					echo "<h1>$name</h1>";
 				}
 				$mysqli->close();
-			}
+			} */
 			
 			require_once("menu.php");
 			require_once("search_bar.php");	
