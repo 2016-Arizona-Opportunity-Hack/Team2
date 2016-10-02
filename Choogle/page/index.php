@@ -22,10 +22,10 @@
 			<div>
 				<input type="text" name="search_in">
 				<input type="submit" value="Search">
-<<<<<<< HEAD
-=======
-					
-				<select name="general_cat">
+				
+				
+				<span>
+					<select name="general_cat">
 					<option value="1">General</option>
 					<option value="2">Living & Transportation</option>
 					<option value="3">Recreation & Culture</option>
@@ -33,17 +33,6 @@
 					<option value="5">Government</option>
 					<option value="6">Care & Services</option>
 				</select>
->>>>>>> f2055114d3710cfeb391ab7fbddf0870b59a8e33
-				
-				<span>
-					<select name="general_cat">
-						<option value=''>General</option>
-						<option value=''>Living & Transportation</option>
-						<option value=''>Recreation & Culture</option>
-						<option value=''>Businesses & Organizations</option>
-						<option value=''>Government</option>
-						<option value=''>Care & Services</option>
-					</select>
 					
 					<select name="specific_cat" id "specific_cat" = 0>
 						<option value="Advertising & Media">Advertising & Media</option>
