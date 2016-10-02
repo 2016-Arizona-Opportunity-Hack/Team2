@@ -39,7 +39,12 @@ form div span {
 /*INPUT FIELD CSS*/
 
 /*NAVIGATION CSS*/
-div.nav {
+div.title h1 {
+	font-family: "Lucida Calligraphy", cursive;
+	font-style: oblique;
+}
+
+div.title {
 	background-image: none;
 	border-bottom: medium solid black;
 	background-color: gray;
@@ -48,7 +53,7 @@ div.nav {
 	text-align: center;
 }
 
-div.nav span#title_head {
+div.title span#title_head {
 	display: inline-block;
 }
 /*NAVIGATION CSS*/

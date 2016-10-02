@@ -1,4 +1,4 @@
-<div class="nav">
+<div class="title">
 	<span id="title_head">
 		<h1>Choogle</h1>
 		<h2>Tag line</h2>
